@@ -1,0 +1,1 @@
+export default function Loading(){return <main role="status" aria-label="Loading workspace" className="animate-pulse space-y-5 p-10"><div className="h-12 w-64 rounded-xl bg-slate-200"/><div className="h-80 rounded-2xl bg-slate-200"/></main>;}
