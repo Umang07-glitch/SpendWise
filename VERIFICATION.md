@@ -2,6 +2,23 @@
 
 Executed in the Windows workspace on 14 November 2026.
 
+## Render preparation, 14 November 2026
+
+- Backend suite: **11 passed**, including managed PostgreSQL URL normalization,
+  hosted-origin enforcement, Secure session cookies, and authenticated HTTPS login.
+- Next.js production build passed with the loopback API rewrite used by deployment.
+- Root `render.yaml` validated against `https://render.com/schema/render.yaml.json`.
+- Combined supervisor started from a clean staging folder and fresh SQLite database:
+  migrations, health through the Next.js proxy, page response, cookie registration,
+  authenticated transaction creation/listing, and OpenAPI all passed. Temporary
+  server processes were stopped afterward.
+- The staged test used Windows, the portable runtimes, and SQLite. It does **not**
+  verify the Linux Docker image, live PostgreSQL, Render's actual HTTPS proxy,
+  hosting memory limits, or a working public deployment. Docker is unavailable locally.
+- No hosting resources or paid plans have been created during this preparation.
+
+The older initial verification record below is retained with its original scope.
+
 ## Passed
 
 - Downloaded official workspace-local Node.js 22.16.0, npm 10.9.2 and Python 3.12.10, since the host had no Node/Python/Docker on PATH. Tools and dependency caches are ignored under `.tools/`.

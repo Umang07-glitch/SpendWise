@@ -4,6 +4,12 @@ A full-stack MCA final-year personal finance application: Next.js App Router + T
 
 Use **fictional data only**. SpendWise does not connect to banks, request bank credentials, move money, or execute payments.
 
+## Online deployment
+
+See [Render deployment](docs/DEPLOYMENT.md) for the single-service web deployment
+and managed PostgreSQL Blueprint. Free database hosting expires after 30 days.
+The deployed database starts empty; local accounts and financial records are not uploaded.
+
 ## Quick start: Docker Desktop on Windows
 
 Install Docker Desktop with the WSL2 engine and open this folder in VS Code. In its PowerShell terminal:
